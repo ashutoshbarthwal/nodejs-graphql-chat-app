@@ -8,6 +8,7 @@ const config = require('@config');
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  playground: true,
   context: ({ req }) => {
 
     // Connect to DB
